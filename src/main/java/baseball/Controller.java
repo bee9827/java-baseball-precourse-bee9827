@@ -13,7 +13,7 @@ public class Controller {
 
     public void playBaseBallGame() {
 
-        Baseball machine = new Baseball(NumberGenerator.getBaseBallNumbers());
+        Baseball machine = new Baseball(NumberGenerator.getBaseBallNumbers(Baseball.NUMBER_SIZE));
 
         while (true) {
             Baseball person = new Baseball(inputView.askNumbers());

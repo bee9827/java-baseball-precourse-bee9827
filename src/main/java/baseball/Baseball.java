@@ -51,8 +51,8 @@ public class Baseball {
 
     private int getMatchCount(Baseball person) {
         int matchCount = 0;
-        for (Integer number : numbers) {
-            if (person.numbers.contains(number)) {
+        for (Integer personNumber : person.numbers) {
+            if (numbers.contains(personNumber)) {
                 matchCount++;
             }
         }
@@ -64,7 +64,6 @@ public class Baseball {
         for (Integer number : numbers) {
             validRange(number);
         }
-
         // validDuplicate(numbers);
     }
 
