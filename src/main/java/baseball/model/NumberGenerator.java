@@ -1,4 +1,4 @@
-package baseball;
+package baseball.model;
 
 import camp.nextstep.edu.missionutils.Randoms;
 
@@ -9,8 +9,7 @@ public class NumberGenerator {
     private static final String GENERATOR_NUMBER_DUPLICATE_EXCEPTION = "제너레이터 중복된 숫자";
 
     public static List<Integer> getBaseBallNumbers(int size){
-        List<Integer> baseBallNumbers = new ArrayList<
-                >();
+        List<Integer> baseBallNumbers = new ArrayList<>();
         
         while(baseBallNumbers.size() < size) {
             Integer number = getRandomNumber();

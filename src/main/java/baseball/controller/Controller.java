@@ -1,4 +1,10 @@
-package baseball;
+package baseball.controller;
+
+import baseball.model.ResultType;
+import baseball.model.Baseball;
+import baseball.model.NumberGenerator;
+import baseball.view.InputView;
+import baseball.view.OutputView;
 
 import java.util.Objects;
 
@@ -12,8 +18,8 @@ public class Controller {
     }
 
     public void playBaseBallGame() {
-
         Baseball machine = new Baseball(NumberGenerator.getBaseBallNumbers(Baseball.NUMBER_SIZE));
+        //machine 명칭
 
         while (true) {
             Baseball person = new Baseball(inputView.askNumbers());

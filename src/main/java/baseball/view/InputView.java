@@ -1,4 +1,4 @@
-package baseball;
+package baseball.view;
 
 import camp.nextstep.edu.missionutils.Console;
 
@@ -19,7 +19,7 @@ public class InputView {
         String numbers = Console.readLine();
         Matcher matcher = pattern.matcher(numbers);
 
-        valid(matcher);
+        valid(matcher); //일 걸림
         List<Integer> result = new ArrayList<>();
 
         if (matcher.matches()) {
